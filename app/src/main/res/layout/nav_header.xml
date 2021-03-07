@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:layout_marginTop="24dp"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:background="@drawable/nav_image">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_welcome_screen"
+        android:textSize="36sp"
+        android:letterSpacing="0.05"
+        android:fontFamily="@font/resident_evil_7_font"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

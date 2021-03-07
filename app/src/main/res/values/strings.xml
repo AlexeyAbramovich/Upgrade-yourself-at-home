@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Прокачай Себя Дома</string>
+    <string name="motivation_phrase">НИКОГДА НЕ ПОЗДНО\nИЗМЕНИТЬ\nСЕБЯ К ЛУШЕМУ</string>
+    <string name="welcome_phrase">ПРИВЕТСТВУЕМ ВАС В\nПРИЛОЖЕНИИ</string>
+    <string name="app_name_welcome_screen">ПРОКАЧАЙ СЕБЯ ДОМА</string>
+    <string name="phrase">ЭТО ПРИЛОЖЕНИЕ ПОМОЖЕТ ВСЕМ\nЖЕЛАЮЩИМ ПРИВЕСТИ СЕБЯ В\nФОРМУ</string>
+    <string name="start">НАЧАТЬ</string>
+    <string name="fill_information">ЗАПОЛНИТЕ\nИНФОРМАЦИЮ О СЕБЕ</string>
+    <string name="name">Имя</string>
+    <string name="line">линия</string>
+    <string name="weight">Вес(кг)</string>
+    <string name="height">Рост(см)</string>
+    <string name="age">Возраст</string>
+    <string name="button_continue">ПРОДОЛЖИТЬ</string>
+    <string name="number_of_workouts">Кол-во тренировок:</string>
+    <string name="level">Уровень</string>
+    <string name="kkals">Каллорий сожжено:</string>
+    <string name="achievements">Получено достижений:</string>
+    <string name="current_achievements">Достижения</string>
+    <string name="w5">Проведите\n5 тренировок</string>
+    <string name="w10">Проведите\n10 тренировок</string>
+    <string name="w30">Проведите\n30 тренировок</string>
+    <string name="w60">Проведите\n60 тренировок</string>
+    <string name="w100">Проведите\n100 тренировок</string>
+    <string name="w150">Проведите\n150 тренировок</string>
+    <string name="list_of_workouts">Список тренировок</string>
+    <string name="my_workouts">Мои тренировки</string>
+    <string name="statistic">Статистика</string>
+    <string name="notifications">Напоминания</string>
+    <string name="settings">Настройки</string>
+    <string name="author">Связь с автором</string>
+    <string name="navigation_drawer_open">Открыть навигацию</string>
+    <string name="navigation_drawer_close">Закрыть навигацию</string>
+    <string name="core">Пресс</string>
+    <string name="difficulty">Сложность</string>
+    <string name="exercises">Упражнения</string>
+    <string name="core_normal">ПРЕСС ЛЮБИТЕЛЬ</string>
+    <string name="description">Описание:</string>
+    <string name="close">Закрыть</string>
+    <string name="name_s">Имя:</string>
+    <string name="weight_s">Вес(кг):</string>
+    <string name="sex">Пол:</string>
+    <string name="height_s">Рост(см):</string>
+    <string name="age_s">Возраст:</string>
+    <string name="reset_title">Сброс данных</string>
+    <string name="reset_message">Вы уверены, что хотите сбросить прогресс?\nПосле сброса данные нельзя будет восстановить.</string>
+    <string name="back_message">Вы уверены, что хотите выйти?\nВесь прогресс будет сброшен.</string>
+    <string name="apply">Подтвердить</string>
+    <string name="cancel">Отменить</string>
+    <string name="time">Время:</string>
+    <string name="button">Кнопка</string>
+    <string name="image">Картинка</string>
+    <string name="default_time">00:00</string>
+    <string name="work_time">Время -</string>
+    <string name="seconds">сек</string>
+    <string name="rest_time">Время отдыха:</string>
+    <string name="next_exercise">Следующее упражнение:</string>
+    <string name="rest">Отдых:</string>
+    <string name="good_job">Отличная работа!</string>
+    <string name="experience">Опыт:</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="to_whom">Кому:</string>
+    <string name="author_email">alexgd444356@gmail.com</string>
+    <string name="theme">Тема:</string>
+    <string name="message">Сообщение:</string>
+    <string name="vk">ВК</string>
+    <string name="chest">Грудь</string>
+    <string name="hit">Кардио</string>
+    <string name="core_easy">ПРЕСС НАЧИНАЮЩИЙ</string>
+    <string name="core_advanced">ПРЕСС ПРОДВИНУТЫЙ</string>
+    <string name="chest_normal">ГРУДЬ ЛЮБИТЕЛЬ</string>
+    <string name="hit_demon">КАРДИО ПРОДВИНУТЫЙ</string>
+    <string-array name="sex">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+    <string-array name="res_time">
+        <item>0 сек</item>
+        <item>10 сек</item>
+        <item>20 сек</item>
+        <item>30 сек</item>
+        <item>40 сек</item>
+        <item>60 сек</item>
+    </string-array>
+</resources>

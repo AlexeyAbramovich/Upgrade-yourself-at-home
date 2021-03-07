@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Workout_At_home" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_text_color</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:actionMenuTextColor">@color/main_text_color</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="fontFamily">@font/danger</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textColorHint">@color/main_text_color</item>
+        <item name="android:background">@drawable/edit_text_shape</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="LineStyle">
+        <item name="contentDescription">@string/line</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+    </style>
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/main_text_color</item>
+    </style>
+    <style name="TextViewStatisticScreenStyle">
+        <item name="fontFamily">@font/teko</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_text_color</item>
+    </style>
+    <style name="TextViewInfoStatisticScreenStyle">
+        <item name="fontFamily">@font/teko</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textColor">@color/main_text_color</item>
+    </style>
+    <style name="TextViewNumbersStatisticScreenStyle">
+        <item name="fontFamily">@font/teko</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:textColor">@color/numbers_color</item>
+    </style>
+    <style name="TextViewInactiveAchievementsStyle">
+        <item name="fontFamily">@font/teko</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/inactive_achievements</item>
+    </style>
+    <style name="TextViewStyleSettings">
+        <item name="fontFamily">@font/teko</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="EditTextStyleSettings">
+        <item name="fontFamily">@font/teko</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+</resources>

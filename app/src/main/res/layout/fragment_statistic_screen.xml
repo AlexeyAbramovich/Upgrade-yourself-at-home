@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/TextViewStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Алексей" />
+
+            <ImageView
+                android:id="@+id/up_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="48dp"
+                android:contentDescription="@string/line"
+                android:src="@drawable/edit_text_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_level"
+                style="@style/TextViewStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/level"
+                app:layout_constraintEnd_toEndOf="@id/progress_bar_level"
+                app:layout_constraintStart_toStartOf="@id/progress_bar_level"
+                app:layout_constraintTop_toBottomOf="@id/up_line" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_level"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="16dp"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/progress_bar_circle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_level"
+                tools:progress="100" />
+
+            <TextView
+                android:id="@+id/text_current_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/teko"
+                android:shadowColor="@color/black"
+                android:shadowRadius="2"
+                android:textColor="@color/main_text_color"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="@id/progress_bar_level"
+                app:layout_constraintEnd_toEndOf="@id/progress_bar_level"
+                app:layout_constraintStart_toStartOf="@id/progress_bar_level"
+                app:layout_constraintTop_toTopOf="@id/progress_bar_level"
+                tools:text="150" />
+
+            <TextView
+                android:id="@+id/text_view_rang"
+                style="@style/TextViewStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/progress_bar_level"
+                app:layout_constraintStart_toStartOf="@id/progress_bar_level"
+                app:layout_constraintTop_toBottomOf="@id/progress_bar_level"
+                tools:text="Новичек" />
+
+            <TextView
+                android:id="@+id/text_view_workouts"
+                style="@style/TextViewInfoStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/number_of_workouts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/up_line" />
+
+            <TextView
+                android:id="@+id/text_view_number_of_workouts"
+                style="@style/TextViewNumbersStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_workouts"
+                tools:text="1000" />
+
+            <TextView
+                android:id="@+id/text_view_kals"
+                style="@style/TextViewInfoStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/kkals"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_number_of_workouts" />
+
+            <TextView
+                android:id="@+id/text_view_number_of_kals"
+                style="@style/TextViewNumbersStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_kals"
+                tools:text="1000000" />
+
+            <TextView
+                android:id="@+id/text_view_achievements"
+                style="@style/TextViewInfoStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/achievements"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_number_of_kals" />
+
+            <TextView
+                android:id="@+id/text_view_number_of_achievements"
+                style="@style/TextViewNumbersStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_achievements"
+                tools:text="50" />
+
+            <TextView
+                android:id="@+id/text_view_current_achievements"
+                style="@style/TextViewStatisticScreenStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/current_achievements"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_number_of_achievements" />
+
+            <ImageView
+                android:id="@+id/down_line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_current_achievements" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/down_line">
+
+                <ImageView
+                    android:id="@+id/iv_5w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inactive_shape"
+                    android:padding="8dp"
+                    android:src="@drawable/workouts_5_inactive" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_5w"
+                style="@style/TextViewInactiveAchievementsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w5"
+                app:layout_constraintEnd_toEndOf="@id/card_view1"
+                app:layout_constraintStart_toStartOf="@id/card_view1"
+                app:layout_constraintTop_toBottomOf="@id/card_view1" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/down_line">
+
+                <ImageView
+                    android:id="@+id/iv_10w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inactive_shape"
+                    android:padding="8dp"
+                    android:src="@drawable/workouts_10_inactive" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_10w"
+                style="@style/TextViewInactiveAchievementsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w10"
+                app:layout_constraintEnd_toEndOf="@id/card_view2"
+                app:layout_constraintStart_toStartOf="@id/card_view2"
+                app:layout_constraintTop_toBottomOf="@id/card_view2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_5w">
+
+                <ImageView
+                    android:id="@+id/iv_30w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inactive_shape"
+                    android:padding="8dp"
+                    android:src="@drawable/workouts_30_inactive" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_30w"
+                style="@style/TextViewInactiveAchievementsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w30"
+                app:layout_constraintEnd_toEndOf="@id/card_view3"
+                app:layout_constraintStart_toStartOf="@id/card_view3"
+                app:layout_constraintTop_toBottomOf="@id/card_view3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_10w">
+
+                <ImageView
+                    android:id="@+id/iv_60w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inactive_shape"
+                    android:padding="8dp"
+                    android:src="@drawable/workouts_60_inactive" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_60w"
+                style="@style/TextViewInactiveAchievementsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w60"
+                app:layout_constraintEnd_toEndOf="@id/card_view4"
+                app:layout_constraintStart_toStartOf="@id/card_view4"
+                app:layout_constraintTop_toBottomOf="@id/card_view4" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_30w">
+
+                <ImageView
+                    android:id="@+id/iv_100w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inactive_shape"
+                    android:padding="8dp"
+                    android:src="@drawable/workouts_100_inactive" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_100w"
+                style="@style/TextViewInactiveAchievementsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w100"
+                app:layout_constraintEnd_toEndOf="@id/card_view5"
+                app:layout_constraintStart_toStartOf="@id/card_view5"
+                app:layout_constraintTop_toBottomOf="@id/card_view5" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_60w">
+
+                <ImageView
+                    android:id="@+id/iv_150w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inactive_shape"
+                    android:padding="8dp"
+                    android:src="@drawable/workouts_150_inactive" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_150w"
+                style="@style/TextViewInactiveAchievementsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w150"
+                app:layout_constraintEnd_toEndOf="@id/card_view6"
+                app:layout_constraintStart_toStartOf="@id/card_view6"
+                app:layout_constraintTop_toBottomOf="@id/card_view6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
