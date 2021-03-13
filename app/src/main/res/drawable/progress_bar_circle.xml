@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring"
+            android:thicknessRatio="16"
+            android:useLevel="false">
+            <solid android:color="@color/progress_bar_background_color"/>
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="-90"
+            android:toDegrees="-90">
+        <shape android:shape="ring"
+            android:thicknessRatio="16"
+            android:useLevel="true">
+            <gradient
+                android:centerColor="@color/progress_bar_active_circle_color"
+                android:endColor="@color/black"
+                android:startColor="@color/black"
+                android:angle="45"/>
+        </shape>
+        </rotate>
+    </item>
+</layer-list>

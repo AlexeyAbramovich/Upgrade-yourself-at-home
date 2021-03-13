@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_end_of_workout"
+        android:layout_width="380dp"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_end_of_workout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_good_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/teko"
+        android:letterSpacing="0.05"
+        android:text="@string/good_job"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_end_of_workout"
+        app:layout_constraintStart_toStartOf="@id/iv_end_of_workout"
+        app:layout_constraintTop_toTopOf="@id/iv_end_of_workout" />
+
+    <TextView
+        android:id="@+id/tv_burned_kkals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/teko"
+        android:letterSpacing="0.05"
+        android:text="@string/kkals"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_end_of_workout"
+        app:layout_constraintStart_toStartOf="@id/iv_end_of_workout"
+        app:layout_constraintTop_toBottomOf="@id/iv_end_of_workout" />
+
+    <TextView
+        android:id="@+id/tv_kkals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/teko"
+        android:textColor="@color/main_text_color"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_end_of_workout"
+        app:layout_constraintStart_toStartOf="@id/iv_end_of_workout"
+        app:layout_constraintTop_toBottomOf="@id/tv_burned_kkals"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/tv_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/teko"
+        android:paddingBottom="16dp"
+        android:text="@string/experience"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/iv_end_of_workout"
+        app:layout_constraintTop_toBottomOf="@id/tv_kkals" />
+
+    <TextView
+        android:id="@+id/tv_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/teko"
+        android:paddingBottom="16dp"
+        android:textColor="@color/main_text_color"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_experience"
+        app:layout_constraintTop_toTopOf="@id/tv_experience"
+        tools:text="+ 30" />
+
+    <TextView
+        android:id="@+id/button_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/teko"
+        android:paddingBottom="16dp"
+        android:text="@string/continue_button"
+        android:textColor="@color/main_text_color"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_end_of_workout"
+        app:layout_constraintTop_toTopOf="@id/tv_experience" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
