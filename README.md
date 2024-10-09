@@ -1,2 +1,2 @@
 # Upgrade-yourself-at-home
-Final project for android course
+App for home workouts
